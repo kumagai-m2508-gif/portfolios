@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>偉人なりきりメーカー</title>
+    <meta charset="utf-8">
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="icons">
+            <div id="functions">
+                <!--ペイントボタン-->
+                <button class="function" id="paint">🎨</button>
+                <!--カメラボタン-->
+                    <button class="function" id="camera">📷</button>
+            </div>
+            <div id="tools">
+                <!--パレット-->
+                <input type="color" id="color" class="hide">
+            </div>
+        </div>
+    </div>
+    <div id="out">
+        <div id="main">
+            <div id="photo">
+                
+                <!--肖像画-->
+                <canvas id="face" width="300" height="300"></canvas>
+                <!--ビデオ-->
+                <video id="video" class="hide" width="300" height="300" autoplay></video>
+            </div>
+            <!--名前-->
+            <div id="full_name" contenteditable="true">坂本　龍馬</div>
+            <!--生没年-->
+            <div id="birth" contenteditable="true">(1836~1867)</div>
+            <!--プロフィール-->
+            <div id="profile" contenteditable="true">
+                坂本龍馬（さかもと　りょうま）は、
+                1：薩長同盟を仲介（1866年）
+                江戸幕府を倒すため、敵対していた薩摩藩と長州藩を結びつける
+                幕府を打倒する勢力が強まり、明治維新のきっかけを作る
+                2：大政奉還を実現（1867年）
+                幕府が天皇に政権を返す「平和的な革命」を推進
+                大規模な戦争をせずに、日本が近代国家へ移行する道を開く
+                日本初の「株式会社」亀山社中を設立
+                海運や貿易を行い、日本の経済発展に貢献
+                後に「海援隊」として発展し、新政府の支援にも関わる
+                ３：「船中八策」を提案
+                新しい政治体制のアイデアをまとめ、後の明治政府の基盤となる
+                憲法制定や議会政治など、近代日本の基本方針を示す
+                4：近江屋事件で暗殺される（1867年）
+                京都の「近江屋」で暗殺される（享年33歳）
+            </div>
+        </div>
+        <!--落書きエリア-->
+        <canvas id="rakugaki" class="hide"></canvas>
+    </div>
+    <!--アップロードボタン(隠し)-->
+    <input type="file" id="file">
+    <div id="footer">偉人なりきりメーカー</div>
+</body>
+
+</html>
